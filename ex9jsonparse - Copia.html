@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Permissõs</title>
+		<meta charset="UTF-8">
+</head>
+	<body>
+
+<h2>Armazenamento no  local storage.</h2>
+<p id="demo"></p>
+
+<script>
+// Storing data: / nome 
+	const myObj = { nome: "José", idade: 31, cidade: "Rio de Janeiro" };
+	const myJSON = JSON.stringify(myObj);
+	localStorage.setItem("testJSON", myJSON);
+
+// Retrieving data:
+	let text = localStorage.getItem("testJSON");
+	let obj = JSON.parse(text);
+	document.getElementById("demo").innerHTML = obj.nome;
+</script>
+
+</body>
+</html>

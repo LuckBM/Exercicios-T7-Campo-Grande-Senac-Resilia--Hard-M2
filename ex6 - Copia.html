@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Permissõs</title>
+		<meta charset="UTF-8">
+</head>
+	<body>
+<h2>JavaScript Objeto e metodo</h2>
+
+<p>Acesso ao objeto</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const Pessoa = {
+  nome: "José",
+  sobrenome: "Silva",
+  nomecompleto: function() {
+    return this.nome + " " + this.sobrenome;
+  }
+};
+
+// Display data from the object using a method:
+document.getElementById("demo").innerHTML = Pessoa.nomecompleto();
+</script>
+
+</body>
+</html>
