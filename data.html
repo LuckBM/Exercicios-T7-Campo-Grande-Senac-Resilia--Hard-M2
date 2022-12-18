@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data</title>
+</head>
+<body>    
+<h1>Data</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+const d = new Date();
+const m = new Date("2022-12-05");
+const dd = new Date("2022-12-05");
+document.getElementById("demo").innerHTML 
+= d.getFullYear();
+document.getElementById("demo1").innerHTML
+ = m.getMonth()+1;
+document.getElementById("demo2").innerHTML 
+= dd.getDate();
+document.getElementById("demo3").innerHTML 
+= d.getHours();
+</script>
+</body>
+</html>
